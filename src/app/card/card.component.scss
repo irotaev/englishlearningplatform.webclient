@@ -1,0 +1,23 @@
+@import "~src/framework";
+
+:host(app-card) {
+  .section-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $colorBackgroundLight;
+
+    .card {
+      position: absolute;
+      top: 8*$stepDefault;
+      left: 50%;
+      margin-left: -12.5*$stepDefault;
+      width: 25*$stepDefault;
+      height: 25*$stepDefault;
+      padding: $stepDefault;
+
+      .card-wrapper {
+      }
+    }
+  }
+}

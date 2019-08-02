@@ -1,0 +1,26 @@
+@import "~src/framework";
+
+:host(app-layout-card) {
+  position: relative;
+  @include card();
+
+  .card-wrapper {
+    flex: 1;
+  }
+
+  .card-header-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: $stepDefault;
+    margin-bottom: $stepDefault;
+    border-bottom: 1px solid $colorLight;
+
+    .header {
+      @extend .text-h2;
+    }
+  }
+
+  .content-wrapper {
+  }
+}

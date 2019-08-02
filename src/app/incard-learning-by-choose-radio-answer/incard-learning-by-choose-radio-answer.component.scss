@@ -1,0 +1,40 @@
+@import "~src/framework";
+
+.master-text-wrapper {
+  position: absolute;
+  top: 6*$stepDefault;
+  left: 0;
+  width: 100%;
+  padding: 0 $stepDefault;
+  text-align: center;
+
+  .master-text {
+    @extend .text-h2;
+  }
+}
+
+.answer-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  .choose-answer {
+    padding: $stepDefault;
+    @extend .text-default;
+    color: $colorMain;
+    border-top: 1px solid $colorLight;
+  }
+
+  .answers-radio {
+    max-width: 15*$stepDefault;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 3*$stepDefault 3*$stepDefault;
+    grid-column-gap: $stepDefault;
+    grid-row-gap: $stepDefault;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
